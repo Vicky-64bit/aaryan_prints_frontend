@@ -246,7 +246,15 @@ const ProductDetails = ({ productId }) => {
 
               {/* {selectedProduct.flipkartUrl && ( */}
                   <button
-                    onClick={() => window.open(selectedProduct.flipkartUrl, "_blank")}
+                    onClick={() => {
+  const url = selectedProduct.flipkartUrl;
+  if (!url) return;
+  window.open(
+    url.startsWith("http") ? url : `https://${url}`,
+    "_blank",
+    "noopener,noreferrer"
+  );
+}}
                     className="flex-1 py-3 px-6 rounded-md font-bold text-lg bg-blue-600 text-white hover:bg-blue-700 transition"
                   >
                     BUY ON FLIPKART
