@@ -1,6 +1,6 @@
 import React from "react";
 import { FaBullseye, FaRegSmile, FaUsers, FaTshirt } from "react-icons/fa";
-import logo from '../../assets/logo.png';
+import logo from '../../assets/Logo.png';
 import { useNavigate } from "react-router-dom";
 
 const About = () => {
