@@ -13,7 +13,7 @@ import {
 } from "react-icons/bi";
 
 import MyOrders from "../components/cart/MyOrders";
-import Wishlist from "../components/cart/wishlist";
+import Wishlist from "../components/cart/Wishlist";
 import Addresses from "./Addresses";
 import AccountAndInformation from "./AccountAndInformation";
 import MyProfileContent from "./MyProfileContent";
